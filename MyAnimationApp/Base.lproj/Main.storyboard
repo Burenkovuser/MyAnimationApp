@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6RS-9C-tvI">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lesson-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAnimationApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unb-X7-Cwd">
-                                <rect key="frame" x="40" y="407" width="240" height="30"/>
+                                <rect key="frame" x="40" y="369" width="240" height="30"/>
                                 <color key="backgroundColor" red="0.42793661779999997" green="0.73162101239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Run Core Animatiion">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +70,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8a-RR-Qjz" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="40" y="468" width="240" height="30"/>
+                                <rect key="frame" x="40" y="430" width="240" height="30"/>
                                 <color key="backgroundColor" red="0.93811394569999995" green="0.71942595070000004" blue="0.99942404029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Run Spring Animatiion">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,6 +112,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Lesson" id="Cng-hJ-nFN"/>
                     <connections>
                         <outlet property="coreAnimationButton" destination="unb-X7-Cwd" id="QoN-gJ-DVc"/>
                         <outlet property="coreAnimationView" destination="YzF-Lv-g8W" id="w76-bk-4SX"/>
@@ -121,6 +122,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="328" y="113"/>
+        </scene>
+        <!--Home work-->
+        <scene sceneID="2it-6y-Iuv">
+            <objects>
+                <viewController id="RDG-1x-Y8v" customClass="MySpringViewController" customModule="MyAnimationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sMH-4n-vK0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVd-lt-X1N" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="40" y="60" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sping Animation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gID-n3-YOY">
+                                        <rect key="frame" x="57.5" y="54" width="125" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93811394569999995" green="0.71942595070000004" blue="0.99942404029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gID-n3-YOY" firstAttribute="centerX" secondItem="CVd-lt-X1N" secondAttribute="centerX" id="1EM-fU-3qb"/>
+                                    <constraint firstAttribute="height" constant="128" id="CIC-gL-RNt"/>
+                                    <constraint firstItem="gID-n3-YOY" firstAttribute="centerY" secondItem="CVd-lt-X1N" secondAttribute="centerY" id="fUd-JW-08C"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlw-fb-ae8" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="87.5" y="269" width="145" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Run spring animation"/>
+                                <connections>
+                                    <action selector="mySpingButton:" destination="RDG-1x-Y8v" eventType="touchUpInside" id="V1q-3P-q8T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51141117074134124" green="1" blue="0.85205565477059353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CVd-lt-X1N" firstAttribute="top" secondItem="JwR-ke-Ckv" secondAttribute="top" constant="40" id="MOQ-jR-u18"/>
+                            <constraint firstItem="xlw-fb-ae8" firstAttribute="centerX" secondItem="sMH-4n-vK0" secondAttribute="centerX" id="VfA-77-pKE"/>
+                            <constraint firstItem="CVd-lt-X1N" firstAttribute="leading" secondItem="JwR-ke-Ckv" secondAttribute="leading" constant="40" id="clw-E1-NyD"/>
+                            <constraint firstItem="JwR-ke-Ckv" firstAttribute="trailing" secondItem="CVd-lt-X1N" secondAttribute="trailing" constant="40" id="ndY-zu-y3f"/>
+                            <constraint firstItem="xlw-fb-ae8" firstAttribute="centerY" secondItem="sMH-4n-vK0" secondAttribute="centerY" id="s7h-C0-q1A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JwR-ke-Ckv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home work" id="6sD-Kv-LXs"/>
+                    <connections>
+                        <outlet property="mySpringLabel" destination="gID-n3-YOY" id="xzX-Jh-Vx0"/>
+                        <outlet property="mySpringView" destination="CVd-lt-X1N" id="5KB-LY-9la"/>
+                        <outlet property="myspringButton" destination="xlw-fb-ae8" id="ti2-q6-jL7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl2-87-jQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-566" y="933"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zHR-XA-oS0">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6RS-9C-tvI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L3B-zh-4Ml">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vfu-Ib-KYW"/>
+                        <segue destination="RDG-1x-Y8v" kind="relationship" relationship="viewControllers" id="yzS-NQ-dLT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDq-FO-pWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-566" y="114"/>
         </scene>
     </scenes>
 </document>
